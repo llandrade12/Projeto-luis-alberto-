@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Impacto 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Evento Impacto</h1>
+            <p></p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="sobre">
+            <h2>Sobre o Evento</h2>
+            <div class="event-info">
+                <div class="event-details">
+                    <h3>Data: 12 de junho de 2025</h3>
+                    <h3>Local: Centro de Convenções Expo Tech - São Paulo/SP</h3>
+                    <p>O Evento Impacto 2025 reunirá os maiores especialistas em trader, inovação e negócios digitais para três dias de palestras inspiradoras, workshops práticos e networking de alto nível.</p>
+                    <p>Tema deste ano: "Banco Central Americano: Como o Fed influencia nas Criptomoedas".</p>
+                </div>
+                <div class="event-image">
+                    <img src="Captura de tela 2025-03-26 111137.png" alt="Mentoria Impacto">
+                </div>
+            </div>
+        </section>
+        
+        <section id="palestrantes">
+            <h2>Nossos Palestrantes</h2>
+            <div class="speakers">
+                <div class="speaker">
+                    <img src="dedeise.png" alt="Desirre Andrade">
+                    <h3>Desirre Andrade</h3>
+                    <p>CEO da Multiser clinica,
+                      Especialista Terapia Cognitiva Comportamental | Formada em Obesidade e Emagrecimento</p>
+                </div>
+                
+                <div class="speaker">
+                    <img src="dbraz.png" alt="Davi Fagundes">
+                    <h3>Davi Fagundes</h3>
+                    <p>Professor de Criptomoedas – ensino a investir de forma simples.
+                      🎮 Streamer & Gamer – unindo finanças e diversão ao vivo.
+                      📊 Conteúdo: Análises, trades e gameplay</p>
+                </div>
+                
+                <div class="speaker">
+                    <img src="kaue.png" alt="Kaue Fagundes">
+                    <h3>Kaue Fagundes</h3>
+                    <p> Especialista e colecionador de cartas pokemons.O maior investidor de cripto de todosss.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="inscricao">
+            <h2>Inscrição</h2>
+            <form id="formInscricao" novalidate>
+                <div class="form-group">
+                    <label for="nome" class="required">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="required">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label>Tipo de Ingresso</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="presencial" name="tipo" value="presencial" checked>
+                            <label for="presencial">Presencial (R$ 150,00)</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="online" name="tipo" value="online">
+                            <label for="online">Online (R$ 200,00)</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos" class="required">Li e aceito os termos de participação e política de privacidade</label>
+                </div>
+                
+                <button type="submit">Realizar Inscrição</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mentoria Impacto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('formInscricao').addEventListener('submit', function(e) {
+            if(!this.checkValidity()) {
+                e.preventDefault();
+                alert('Por favor, preencha todos os campos obrigatórios corretamente.');
+            } else {
+                alert('Inscrição realizada com sucesso! Em breve enviaremos mais informações para o e-mail cadastrado.');
+            }
+        });
+    </script>
+</body>
+</html>
